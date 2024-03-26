@@ -136,7 +136,7 @@ fun conflictByGiap() {
     val a = 6;
 
 }
-fun thisFunctionOfGiap(){
+fun thisFunctionOfThiennnnnnn(){
     print("kasjdhfjkshfjkdf")
 }
 
