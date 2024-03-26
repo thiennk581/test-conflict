@@ -112,6 +112,11 @@ fun Lemonade(modifier: Modifier = Modifier) {
     }
 }
 
+fun conflictTestByThien() {
+    print("Thienn")
+    val a = 12;
+}
+
 @Preview(showBackground = true)
 @Composable
 fun LemonadeApp() {
