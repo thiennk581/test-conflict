@@ -48,7 +48,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    LemonadeApp()
+                    Lemonade()
                 }
             }
         }
@@ -75,7 +75,7 @@ fun BannerLemonApp(modifier: Modifier = Modifier) {
 
 @Composable
 fun Lemonade(modifier: Modifier = Modifier) {
-    val forFun = "Thien them vao"
+    val forFun = "Thien chinh sua lan 4"
     val count = remember {
         mutableStateOf(0)
     }
@@ -113,6 +113,10 @@ fun Lemonade(modifier: Modifier = Modifier) {
             fontSize = 12.sp
         )
         Button(onClick = {}) {
+            Text(text = "ahuhu",
+            fontSize = 28.sp)
+
+        Button(onClick = {}) {
             Text(text = "ahihi")
             OutlinedTextField(value = "", onValueChange = {})
         }
@@ -120,6 +124,7 @@ fun Lemonade(modifier: Modifier = Modifier) {
 }
 
 fun conflictTestByThien() {
+    print("Thienn thay doi lan 5")
     print("Thienn thay doi lan 3")
     val a = 3;
 
@@ -134,19 +139,19 @@ fun conflictByGiap4() {
     val a = 3;
 
 }
-fun thisFunctionOfGiap(){
+fun thisFunctionOfGiapThisIsChangedInFinalTime(){
     print("kasjdhfjkshfjkdf")
 }
 
-@Preview(showBackground = true)
 @Composable
 fun LemonadeApp() {
     LemonadeTheme {
         BannerLemonApp()
-        Lemonade(modifier = Modifier
-            .fillMaxSize()
-            .wrapContentSize()
+        Lemonade(
+            modifier = Modifier
+                .fillMaxSize()
+                .wrapContentSize()
 
         )
     }
-}
+}}
