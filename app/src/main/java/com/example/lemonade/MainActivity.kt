@@ -108,7 +108,7 @@ fun Lemonade(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(16.dp))
         Text(
             text = stringResource(id = content),
-            fontSize = 18.sp
+            fontSize = 38.sp
         )
         Button(onClick = {}) {
             Text(text = "ahihi")
@@ -117,7 +117,7 @@ fun Lemonade(modifier: Modifier = Modifier) {
 }
 
 fun conflictTestByThien() {
-    print("Thienn")
+    print("Thienn thay doi lan 1")
     val a = 12;
 }
 
