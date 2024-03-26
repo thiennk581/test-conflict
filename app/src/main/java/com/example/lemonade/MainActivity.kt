@@ -73,6 +73,7 @@ fun BannerLemonApp(modifier: Modifier = Modifier) {
 
 @Composable
 fun Lemonade(modifier: Modifier = Modifier) {
+    val forFun = "Thien them vao"
     val count = remember {
         mutableStateOf(0)
     }
@@ -104,17 +105,17 @@ fun Lemonade(modifier: Modifier = Modifier) {
                     shape = RoundedCornerShape(40.dp)
                 )
         )
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(6.dp))
         Text(
             text = stringResource(id = content),
-            fontSize = 38.sp
+            fontSize = 8.sp
         )
     }
 }
 
 fun conflictTestByThien() {
-    print("Thienn thay doi lan 1")
-    val a = 12;
+    print("Thienn thay doi lan 3")
+    val a = 3;
 }
 
 @Preview(showBackground = true)
