@@ -103,14 +103,14 @@ fun Lemonade(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .size(300.dp)
                 .background(
-                    color = Color(195, 235, 210),
+                    color = Color(120, 235, 210),
                     shape = RoundedCornerShape(40.dp)
                 )
         )
         Spacer(modifier = Modifier.height(6.dp))
         Text(
             text = stringResource(id = content),
-            fontSize = 8.sp
+            fontSize = 16.sp
         )
         Button(onClick = {}) {
             Text(text = "ahihi")
@@ -122,6 +122,12 @@ fun Lemonade(modifier: Modifier = Modifier) {
 fun conflictTestByThien() {
     print("Thienn thay doi lan 3")
     val a = 3;
+
+}
+fun conflictByGiap() {
+    print("Giap thay doi lan 3")
+    val a = 3;
+
 }
 fun thisFunctionOfGiap(){
     print("kasjdhfjkshfjkdf")
