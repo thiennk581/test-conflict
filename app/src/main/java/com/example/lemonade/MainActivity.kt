@@ -20,6 +20,7 @@ import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -112,6 +113,7 @@ fun Lemonade(modifier: Modifier = Modifier) {
         )
         Button(onClick = {}) {
             Text(text = "ahihi")
+            OutlinedTextField(value = "", onValueChange = {})
         }
     }
 }
@@ -119,6 +121,9 @@ fun Lemonade(modifier: Modifier = Modifier) {
 fun conflictTestByThien() {
     print("Thienn thay doi lan 1")
     val a = 12;
+}
+fun thisFunctionOfGiap(){
+    print("kasjdhfjkshfjkdf")
 }
 
 @Preview(showBackground = true)
