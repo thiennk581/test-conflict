@@ -77,11 +77,11 @@ fun BannerLemonApp(modifier: Modifier = Modifier) {
 fun Lemonade(modifier: Modifier = Modifier) {
     val forFun = "Thien chinh sua lan 4"
     val count = remember {
-        mutableStateOf(0)
+        mutableStateOf(6)
     }
     if (count.value > 5) count.value = 0
     val image = when(count.value.toInt()) {
-        0 -> R.drawable.lemon_tree
+        0 -> R.drawable.lemon_restart
         4 -> R.drawable.lemon_drink
         5 -> R.drawable.lemon_restart
         else -> R.drawable.lemon_squeeze
@@ -89,11 +89,11 @@ fun Lemonade(modifier: Modifier = Modifier) {
     val content = when(count.value) {
         0 -> R.string.lemon_tree
         4 -> R.string.lemonade
-        5 -> R.string.empty_glass
-        else -> R.string.lemon
+        5 -> R.string.lemon_tree
+        else -> R.string.lemon_tree
     }
     Column(
-        modifier = modifier.clickable { ++count.value },
+        modifier = modifier.clickable { --count.value },
         horizontalAlignment = Alignment.CenterHorizontally,
 
     ) {
@@ -111,29 +111,29 @@ fun Lemonade(modifier: Modifier = Modifier) {
         Text(
             text = stringResource(id = content),
 
-            fontSize = 5.sp
+            fontSize = 132.sp
         )
         Button(onClick = {}) {
             Text(text = "ahuhu",
-            fontSize = 28.sp)
+            fontSize = 100.sp)
 
         Button(onClick = {}) {
-            Text(text = "ahihi")
-            OutlinedTextField(value = "", onValueChange = {})
+            Text(text = (3).toString())
+            OutlinedTextField(value = stringResource(id = R.string.lemonade), onValueChange = {})
 
         }
     }
 }
 
 fun conflictTestByThien() {
-    print("Thienn thay doi lan 5")
+    print("Thienn thay doi lan 6")
     print("Thienn thay doi lan 3")
-    val a = 3;
+    val a = 6;
 
 }
 fun conflictByGiap() {
     print("Giap thay doi lan 3")
-    val a = 3;
+    val a = 6;
 
 }
 fun thisFunctionOfGiap(){
