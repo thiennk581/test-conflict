@@ -20,6 +20,7 @@ import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -47,7 +48,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    LemonadeApp()
+                    Lemonade()
                 }
             }
         }
@@ -102,35 +103,52 @@ fun Lemonade(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .size(300.dp)
                 .background(
-                    color = Color(195, 235, 210),
+                    color = Color(120, 235, 210),
                     shape = RoundedCornerShape(40.dp)
                 )
         )
         Spacer(modifier = Modifier.height(6.dp))
         Text(
             text = stringResource(id = content),
-            fontSize = 88.sp
+
+            fontSize = 5.sp
         )
         Button(onClick = {}) {
-            Text(text = "ahuhu")
+            Text(text = "ahuhu",
+            fontSize = 28.sp)
+
+        Button(onClick = {}) {
+            Text(text = "ahihi")
+            OutlinedTextField(value = "", onValueChange = {})
+
         }
     }
 }
 
 fun conflictTestByThien() {
-    print("Thienn thay doi lan 4")
-    val a = 4;
+    print("Thienn thay doi lan 5")
+    print("Thienn thay doi lan 3")
+    val a = 3;
+
+}
+fun conflictByGiap() {
+    print("Giap thay doi lan 3")
+    val a = 3;
+
+}
+fun thisFunctionOfGiap(){
+    print("kasjdhfjkshfjkdf")
 }
 
-@Preview(showBackground = true)
 @Composable
 fun LemonadeApp() {
     LemonadeTheme {
         BannerLemonApp()
-        Lemonade(modifier = Modifier
-            .fillMaxSize()
-            .wrapContentSize()
+        Lemonade(
+            modifier = Modifier
+                .fillMaxSize()
+                .wrapContentSize()
 
         )
     }
-}
+}}
