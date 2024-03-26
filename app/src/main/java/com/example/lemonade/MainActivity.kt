@@ -81,10 +81,10 @@ fun Lemonade(modifier: Modifier = Modifier) {
     }
     if (count.value > 5) count.value = 0
     val image = when(count.value.toInt()) {
-        0 -> R.drawable.lemon_restart
-        4 -> R.drawable.lemon_drink
+        0 -> R.drawable.lemon_tree
+        4 -> R.drawable.lemon_tree
         5 -> R.drawable.lemon_restart
-        else -> R.drawable.lemon_squeeze
+        else -> R.drawable.lemon_tree
     }
     val content = when(count.value) {
         0 -> R.string.lemon_tree
