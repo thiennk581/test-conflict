@@ -18,6 +18,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -110,6 +111,9 @@ fun Lemonade(modifier: Modifier = Modifier) {
             text = stringResource(id = content),
             fontSize = 8.sp
         )
+        Button(onClick = {}) {
+            Text(text = "ahihi")
+        }
     }
 }
 
