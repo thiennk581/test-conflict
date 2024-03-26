@@ -81,10 +81,12 @@ fun Lemonade(modifier: Modifier = Modifier) {
     }
     if (count.value > 5) count.value = 0
     val image = when(count.value.toInt()) {
+
         0 -> R.drawable.lemon_tree
         4 -> R.drawable.lemon_tree
         5 -> R.drawable.lemon_restart
         else -> R.drawable.lemon_tree
+
     }
     val content = when(count.value) {
         0 -> R.string.lemon_tree
@@ -120,7 +122,6 @@ fun Lemonade(modifier: Modifier = Modifier) {
         Button(onClick = {}) {
             Text(text = (3).toString())
             OutlinedTextField(value = stringResource(id = R.string.lemonade), onValueChange = {})
-
         }
     }
 }
@@ -136,8 +137,9 @@ fun conflictByGiap() {
     val a = 6;
 
 }
+
 fun thisFunctionOfThiennnnnnn(){
-    print("kasjdhfjkshfjkdf")
+    print("hasagii")
 }
 
 @Composable
