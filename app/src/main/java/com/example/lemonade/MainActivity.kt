@@ -81,9 +81,9 @@ fun Lemonade(modifier: Modifier = Modifier) {
     }
     if (count.value > 5) count.value = 0
     val image = when(count.value.toInt()) {
-        0 -> R.drawable.lemon_restart
+        0 -> R.drawable.lemon_drink
         4 -> R.drawable.lemon_drink
-        5 -> R.drawable.lemon_restart
+        5 -> R.drawable.lemon_drink
         else -> R.drawable.lemon_squeeze
     }
     val content = when(count.value) {
@@ -135,12 +135,8 @@ fun conflictByGiap() {
     val a = 6;
 
 }
-fun conflictByGiap4() {
-    print("Giap thay doi lan 4")
-    val a = 3;
 
-}
-fun thisFunctionOfGiapThisIsChangedIn(){
+fun thisFunctionOfThiennnnnnn(){
     print("kasjdhfjkshfjkdf")
 }
 
